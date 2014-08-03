@@ -4,7 +4,7 @@
 
 ### Det som trengs
 
-- [Git] [git-home]
+- [Git] [git-home] (kun nødvendig om du ønsker å hente ned koden)
 - [Java] [java-home] 1.5 eller nyere.
 - [Maven] [maven-home], følg installasjonsbeskrivelsen på nedlastingssiden.
 
