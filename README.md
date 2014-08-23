@@ -59,6 +59,7 @@ public class SlowTest {
 </pre>
 
 Et løsningsforslag finnes i fila losningsforslag-steg-3.md
+
 ### [steg-4: Sluttresultat] [step-4]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
