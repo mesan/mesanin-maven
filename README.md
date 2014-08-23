@@ -28,7 +28,7 @@ Etter en stund så har applikasjonen vokst og mengden tester er blitt mange og d
 går stadig tregere. Dette har gjort at det å kjøre enhetstestene tar uforholdsmessig lang tid og utgjør
 et irritasjonsmoment i det daglige. Men det er kun noen av testene som tar lang tid.
 
-- Ekskluder trege tester fra standard bygg i prosjektet mesanin-maven-common som benyttes lokalt.
+- Ekskluder trege tester fra standard bygg i prosjektet `mesanin-maven-common` som benyttes lokalt.
 - Alle testene skal kjøres på byggserver, inkludert de trege.
  - Her er det tenkt at du skal benytte en maven profil til å konfigurere plugin til å kjører alle testene.
 
