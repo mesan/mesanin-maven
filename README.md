@@ -24,7 +24,7 @@ Oppdatering av testavhengighet og tilpasning av testkode.
 Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
-Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av byggprofiler.
+Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
 ### steg-4: Sluttresultat
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
