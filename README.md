@@ -20,57 +20,45 @@ Oppretting av prosjekt på kommandolinja.
 ### [steg-1: Oppdater avhengighet] [step-1]
 Oppdatering av testavhengighet og tilpasning av testkode.
 
-### steg-2: Multimodulprosjekt
-Applikasjonen er blitt veldig etterspurt og det er et ønske om å gjøre den tilgjengelig også på nett.  
-Det er da naturlig å tenke gjenbruk, og det kan løses gjennom å endre prosjektet til et multimodulprosjekt
+### [steg-2: Multimodulprosjekt] [step-2]
+Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 
-Vi får da ett morprosjekt med flere barnprosjekter
+### steg-3: Ekskludering av tester og byggprofiler
+Etter en stund så har applikasjonen vokst og mengden tester er blitt mange og det å kjøre testene
+går stadig tregere. Dette har gjort at det å kjøre enhetstestene tar uforholdsmessig lang tid og utgjør
+et irritasjonsmoment i det daglige. Men det er kun noen av testene som tar lang tid.
 
- - Eksisterende prosjekt mesanin-maven endres til å bli morprosjekt, de andre nye blir barnprosjekt
- - Opprett prosjekt for kommandolinjeapplikasjonen `mesanin-maven-cli`,
- - opprett et webprosjekt `mesanin-maven-web` og
- - et prosjekt for koden som er felles `mesanin-maven-common`.
+- Ekskluder trege tester fra standard bygg i prosjektet mesanin-maven-common som benyttes lokalt.
+- Alle testene skal kjøres på byggserver, inkludert de trege.
+ - Her er det tenkt at du skal benytte en maven profil til å konfigurere plugin til å kjører alle testene.
 
 Hint:
 
-- Det har betydning for i hvilken katalog du står i når du kjører kommandoene for opprettelse av barnprosjektene.
-- Prosjektene mesanin-maven-common og mesanin-maven-cli kan opprettes med malen `maven-archetype-quickstart`.
-- mesanin-maven-web kan opprettes med malen `maven-archetype-webapp`.
-- Benytt samme groupId for alle prosjektene som ble benyttet under opprettelsen av første prosjekt, `no.mesan.mesanin.maven`.
-- Et barnprosjekt kan ha en avhengighet til et annet barnprosjekt.
+- Nullstill ekskludering av trege tester i byggen i profilen.
 
-Den overordnede prosjektstrukturen er tenkt å bli som vist under:
+Hvis du trenger en treg test så bruker SlowTest.java hele 30 sekunder på å bli ferdig.
+
 <pre>
-<strong>mesanin-maven</strong>
-+--<strong>mesanin-maven-cli</strong>
-|  +--src
-|  +--pom.xml
-+--<strong>mesanin-maven-common</strong>
-|  +--src
-|  +--pom.xml
-+--<strong>mesanin-maven-web</strong>
-|  +--src
-|  +--pom.xml
-+--pom.xml  
+
+package no.mesan.mesanin.maven.service;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
+
+public class SlowTest {
+
+    @Test
+    public void veldig_treg_test() throws Exception {
+        System.out.println("Kjorer veldig_treg_test");
+        Thread.sleep(30000);
+        assertTrue(true);
+    }
+}
+
 </pre>
 
-Den opprinnelige koden fra mesanin-maven skal fordeles på barnprosjektene
-
-- Lag en ny felles service, for eksempel GreeterService.java, som  inneholder felleskoden fra App.java.
-- Benytt den nye servicen i main-metoden i App.java og fra index.jsp i mesanin-maven-web.
-- Det kan være en idé å legge til en plugin som gjør at du slipper å tenkte på å deploye mesanin-maven-web til en Servlet-container for å gjøre utvikling enklere. 
-  - Dette løser Maven ved at du kan kunne legge til en plugin.
-  - Legg til enten `tomcat7-maven-plugin` eller `jetty-maven-plugin` som **plugin** i mesanin-maven-web.
-- Endre slik at avhengigheter som skal brukes i flere barnprosjekter konfigureres i morpom-en, `dependencyManagement`.
-- Legg til et loggrammeverk
-  - Endre App.java i mesanin-maven-cli til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
-  - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for logging av debuginformasjon.
-
-Et løsningsforslag finnes i fila losningsforslag-steg-2.md
-
-### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
-Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av byggprofiler.
-
+Et løsningsforslag finnes i fila losningsforslag-steg-3.md
 
 [git-home]: http://git-scm.com/
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
