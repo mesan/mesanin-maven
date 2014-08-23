@@ -17,8 +17,6 @@ Den er ikke ment for bruk i produksjon.
 ### [steg-0: Opprett prosjekt] [step-0]
 Oppretting av prosjekt på kommandolinja.
 
-Et løsningsforslag finnes i fila losningsforslag-steg-0.md
-
 ### steg-1: Oppdater avhengighet
 - Oppdater testavhengigheten (JUnit) til siste versjon. Søk kan gjøres i [The Central Repository] [maven-search-repo]
 - Oppdater syntaks for testen til å bruke JUnit 4.x syntaks. Det blir da mindre boilerplatekode i testen.
