@@ -24,7 +24,7 @@
     public class AppTest {
 
         @Test
-        public void viktigSjekk() {
+        public void viktig_sjekk() {
             assertTrue(true);
         }
     }
