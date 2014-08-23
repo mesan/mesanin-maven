@@ -71,6 +71,9 @@ Et løsningsforslag finnes i fila losningsforslag-steg-2.md
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av byggprofiler.
 
+### [steg-4: Sluttresultat] [step-4]
+Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
+
 
 [git-home]: http://git-scm.com/
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -81,3 +84,4 @@ Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle tes
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
 [step-2]: https://github.com/mesan/mesanin-maven/tree/step-2
 [step-3]: https://github.com/mesan/mesanin-maven/tree/step-3
+[step-4]: https://github.com/mesan/mesanin-maven/tree/step-4
