@@ -14,8 +14,26 @@ Den er ikke ment for bruk i produksjon.
 </strong>
 </pre>
 
-### [steg-0: Opprett prosjekt] [step-0]
-Oppretting av prosjekt på kommandolinja.
+### steg-0: Opprett prosjekt
+Opprett et prosjekt på kommandolinja
+
+- Hint: Maven Archetype Plugin, mal `maven-archetype-quickstart`  
+- Forslag til groupId: `no.mesan.mesanin.maven` og artifactId: `mesanin-maven`
+
+######Når du har gjort dette så vil du ha opprettet:
+Et nytt prosjekt med navn 'mesanin-maven' med filene
+
+- pom.xml, App.java og AppTest.java
+
+Bygg prosjektet med `mvn package`
+
+Kjør applikasjonen `java -cp target/mesanin-maven-1.0-SNAPSHOT.jar no.mesan.mesanin.maven.App`.
+
+En vellyket kjøring skriver ut `Hello World!`
+
+Kjør kommandoen `mvn help:effective-pom` for å se den fullstendige konfigurasjonen for prosjektet.
+
+Et løsningsforslag finnes i fila losningsforslag-steg-0.md
 
 ### [steg-1: Oppdater avhengighet] [step-1]
 Oppdatering av testavhengighet og tilpasning av testkode.
