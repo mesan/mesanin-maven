@@ -64,7 +64,7 @@ Den opprinnelige koden fra mesanin-maven skal fordeles på barnprosjektene
 - Endre slik at avhengigheter som skal brukes i flere barnprosjekter konfigureres i morpom-en, `dependencyManagement`.
 - Legg til et loggrammeverk
   - Endre App.java i mesanin-maven-cli til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
-  - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for logging av debuginformasjon.
+  - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for å logge at servicen blir kalt.
 
 Et løsningsforslag finnes i fila losningsforslag-steg-2.md
 

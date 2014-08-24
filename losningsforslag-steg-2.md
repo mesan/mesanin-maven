@@ -135,7 +135,19 @@ Webapplikasjonen kan startes ved å kjøre en av kommandoene under fra katalogen
 - `mvn tomcat7:run` webapplikasjonen er tilgjengelig fra [http://localhost:8080/mesanin-maven-web/] [tomcat7-localhost]
 - `mvn jetty:run` webapplikasjonen er tilgjengelig fra [http://localhost:8080/] [jetty-localhost]
 
-Test at mesanin-maven-cli fungerer. Dette kan gjøres på samme måte som i [step-0]. Husk å legge til GreeterService på classpath.
+Test at applikasjonen i `mesanin-maven-cli` fortsatt fungerer. Dette kan gjøres på samme måte som i [step-0]. Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
+
+For å kjøre løsningsforslaget så kan følgende kommando benyttes. Husk å tilpasse path-ene slik at de stemmer med din maskin.
+
+Linux/OS X
+<pre>
+java -cp target/mesanin-maven-cli-1.0-SNAPSHOT.jar:../mesanin-maven-common/target/mesanin-maven-common-1.0-SNAPSHOT.jar:/home/<strong><i>brukernavn</i></strong>/.m2/repository/org/apache/logging/log4j/log4j-core/2.0/log4j-core-2.0.jar:/home/<strong><i>brukernavn</i></strong>/.m2/repository/org/apache/logging/log4j/log4j-api/2.0/log4j-api-2.0.jar no.mesan.mesanin.maven.App
+</pre>
+
+Windows
+<pre>
+java -cp target\mesanin-maven-cli-1.0-SNAPSHOT.jar;..\mesanin-maven-common\target\mesanin-maven-common-1.0-SNAPSHOT.jar;C:\Users\<strong><i>brukernavn</i></strong>\.m2\repository\org\apache\logging\log4j\log4j-core\2.0\log4j-core-2.0.jar;C:\Users\<strong><i>brukernavn</i></strong>\.m2\repository\org\apache\logging\log4j\log4j-api\2.0\log4j-api-2.0.jar no.mesan.mesanin.maven.App
+</pre>
 
 [tomcat7-localhost]: http://localhost:8080/mesanin-maven-web/
 [jetty-localhost]: http://localhost:8080/
