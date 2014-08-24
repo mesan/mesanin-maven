@@ -8,7 +8,7 @@ public class GreeterService {
     private final Logger logger = LogManager.getLogger();
 
     public String sayHello() {
-        logger.debug("sayHello()");
+        logger.info("sayHello()");
         return "Hello World!";
     }
 }
