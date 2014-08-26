@@ -32,4 +32,6 @@ Under er et utdrag fra pom.xml
 
 Kjør kommandoen `mvn package` for å lage uber-jar-en.
 
-For å kjøre applikasjonen benytt kommandoen `java -cp target/mesanin-maven-cli-1.0-SNAPSHOT-jar-with-dependencies.jar no.mesan.mesanin.maven.App`
+For å kjøre applikasjonen benytt kommandoen
+
+`java -cp target/mesanin-maven-cli-1.0-SNAPSHOT-jar-with-dependencies.jar no.mesan.mesanin.maven.App`
