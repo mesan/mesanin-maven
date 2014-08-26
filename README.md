@@ -26,38 +26,6 @@ Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
-- Ekskluder trege tester fra standard bygg i prosjektet `mesanin-maven-common` som benyttes lokalt.
-- Alle testene skal kjøres på byggserver, inkludert de trege.
- - Her er det tenkt at du skal benytte en maven profil til å konfigurere plugin til å kjører alle testene.
-
-Hint:
-
-- Nullstill ekskludering av trege tester i byggen i profilen.
-
-Hvis du trenger en treg test så bruker SlowTest.java hele 30 sekunder på å bli ferdig.
-
-<pre>
-
-package no.mesan.mesanin.maven.service;
-
-import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
-
-public class SlowTest {
-
-    @Test
-    public void veldig_treg_test() throws Exception {
-        System.out.println("Kjorer veldig_treg_test");
-        Thread.sleep(30000);
-        assertTrue(true);
-    }
-}
-
-</pre>
-
-Et løsningsforslag finnes i fila losningsforslag-steg-3.md
-
 ### [steg-4: Filtrering av ressurser] [step-4]
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 
