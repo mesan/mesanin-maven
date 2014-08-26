@@ -31,7 +31,13 @@ Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
-### [steg-4: Sluttresultat] [step-4]
+### [steg-4: Filtrering av ressurser] [step-4]
+Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
+
+### [steg-5: Uber-jar] [step-5]
+Lage en uber-jar, en jar med alle avhengighetene, som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
+
+### [steg-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
 
@@ -45,3 +51,5 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [step-2]: https://github.com/mesan/mesanin-maven/tree/step-2
 [step-3]: https://github.com/mesan/mesanin-maven/tree/step-3
 [step-4]: https://github.com/mesan/mesanin-maven/tree/step-4
+[step-5]: https://github.com/mesan/mesanin-maven/tree/step-5
+[step-6]: https://github.com/mesan/mesanin-maven/tree/step-6
