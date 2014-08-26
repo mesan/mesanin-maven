@@ -36,6 +36,8 @@ Synes du det virket unødvendig komplisert å måtte bygge opp classpath-en for 
 Det finnes et bedre alternativ. Stikkordet er uber-jar. Lag en uber-jar, en jar som inneholder alle avhengighetene som 
 trengs for å kjøre applikasjonen, og du trenger ikke lenger å bekymre deg for å manuelt måtte bygge opp classpath-en ved kjøring.
 
+Et løsningsforslag finnes i fila losningsforslag-steg-5.md
+
 ### [steg-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
