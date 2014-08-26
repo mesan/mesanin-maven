@@ -26,8 +26,10 @@ Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
-### [steg-4: Filtrering av ressurser] [step-4]
-Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
+### steg-4: Filtrering av ressurser
+I dette steget så skal prosjektets versjonsnummer, fra pom.xml legges til i JSP-siden. Dette ønsker du ikke gjøre manuelt da det er lett å glemme.
+
+Et løsningsforslag finnes i fila losningsforslag-steg-4.md
 
 ### [steg-5: Uber-jar] [step-5]
 Lage en uber-jar, en jar med alle avhengighetene, som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
