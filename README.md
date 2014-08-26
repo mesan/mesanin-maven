@@ -64,7 +64,7 @@ Et løsningsforslag finnes i fila losningsforslag-steg-3.md
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 
 ### [steg-5: Uber-jar] [step-5]
-Lage en uber-jar, en jar med alle avhengighetene, som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
+Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
 
 ### [steg-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
