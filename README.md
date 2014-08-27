@@ -70,6 +70,24 @@ For å få resultatet fra GreetingService så kan følgende kodesnutter legges i
   - Endre App.java i mesanin-maven-cli til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
   - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for å logge at servicen blir kalt.
 
+For at loggeren skal skrive ut noe på info-nivå så må den konfigureres litt. Standard loggnivå er error.
+
+Legg til en fil med navn log4j2.xml, forutsetter at Log4J 2 brukes, i src/main/resources med følgende innhold:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Configuration status="WARN">
+        <Appenders>
+            <Console name="Console" target="SYSTEM_OUT">
+                <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            </Console>
+        </Appenders>
+        <Loggers>
+            <Root level="info">
+                <AppenderRef ref="Console"/>
+            </Root>
+        </Loggers>
+    </Configuration>
+
 Test at applikasjonen i mesanin-maven-cli fortsatt fungerer. Dette kan gjøres på samme måte som i step-0. 
 Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
 
