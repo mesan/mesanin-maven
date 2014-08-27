@@ -70,6 +70,9 @@ For å få resultatet fra GreetingService så kan følgende kodesnutter legges i
   - Endre App.java i mesanin-maven-cli til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
   - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for å logge at servicen blir kalt.
 
+Test at applikasjonen i mesanin-maven-cli fortsatt fungerer. Dette kan gjøres på samme måte som i step-0. 
+Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
+
 Et løsningsforslag finnes i fila losningsforslag-steg-2.md
 
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
