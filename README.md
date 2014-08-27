@@ -20,6 +20,7 @@ Oppretting av prosjekt på kommandolinja.
 ### steg-1: Oppdater avhengighet
 - Oppdater testavhengigheten (JUnit) til siste versjon. Søk kan gjøres i [The Central Repository] [maven-search-repo]
 - Oppdater syntaks for testen til å bruke JUnit 4.x syntaks. Det blir da mindre boilerplatekode i testen.
+Et eksempel på syntaksen finner du på "Getting started "-siden hos [junit.org] [junit-home]
 
 Sjekk at testen fortsatt fungerer ved å kjøre testen på nytt med `mvn clean test`
 
@@ -45,6 +46,7 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
+[junit-home]: http://junit.org/
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
