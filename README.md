@@ -58,6 +58,10 @@ Den opprinnelige koden fra mesanin-maven skal fordeles på barnprosjektene
 
 - Lag en ny felles service, for eksempel GreeterService.java, som  inneholder felleskoden fra App.java.
 - Benytt den nye servicen i main-metoden i App.java og fra index.jsp i mesanin-maven-web.
+For å få resultatet fra GreetingService så kan følgende kodesnutter legges i JSP-fila. Merk fullt klassenavn.
+`<% no.mesan.mesanin.maven.service.GreeterService greeterService = new no.mesan.mesanin.maven.service.GreeterService(); %>`
+`<h2>GreeterService.sayHello(): '<%= greeterService.sayHello() %>'</h2>`
+
 - Det kan være en idé å legge til en plugin som gjør at du slipper å tenkte på å deploye mesanin-maven-web til en Servlet-container for å gjøre utvikling enklere. 
   - Dette løser Maven ved at du kan kunne legge til en plugin.
   - Legg til enten `tomcat7-maven-plugin` eller `jetty-maven-plugin` som **plugin** i mesanin-maven-web.
