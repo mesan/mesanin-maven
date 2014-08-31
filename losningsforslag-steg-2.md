@@ -135,7 +135,10 @@ Webapplikasjonen kan startes ved å kjøre en av kommandoene under fra katalogen
 
 Test at applikasjonen i `mesanin-maven-cli` fortsatt fungerer. Dette kan gjøres på samme måte som i [step-0]. Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
 
-For å kjøre løsningsforslaget så kan følgende kommando benyttes. Husk å tilpasse path-ene slik at de stemmer med din maskin.
+For å kjøre løsningsforslaget så kan kommandoen under benyttes.
+
+- Husk å tilpasse path-ene slik at de stemmer med din maskin. Kommandoene under benytter JAR-ene som ligger i prosjektmappene. For å generere JAR-ene så kan du kjøre kommandoen `mvn clean package` fra morprosjektet.
+- Hvis du heller ønsker å bruke JAR-ene som ligger i lokalt Maven repository så kan dette gjøres på samme måte som for loggrammeverket. Hvis prosjekt JAR-ene ikke ligger i lokalt repository så legges de til ved å kjøre kommandoen `mvn clean install` fra morprosjektet.
 
 Linux/OS X
 <pre>
