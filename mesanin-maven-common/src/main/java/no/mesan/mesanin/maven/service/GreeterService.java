@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class GreeterService {
 
-    private final Logger logger = LogManager.getLogger();
+    private final Logger logger = LogManager.getLogger(GreeterService.class.getName());
 
     public String sayHello() {
         logger.info("sayHello()");

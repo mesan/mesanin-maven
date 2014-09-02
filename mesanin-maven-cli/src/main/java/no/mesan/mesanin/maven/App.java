@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 public class App {
 
-    private static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger(App.class.getName());
 
     public static void main(String[] args) {
         final GreeterService greeterService = new GreeterService();
