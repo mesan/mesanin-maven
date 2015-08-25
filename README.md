@@ -3,7 +3,7 @@
 ### Det som trengs
 
 - [Git] [git-home] (kun nødvendig om du ønsker å hente ned koden)
-- [Java] [java-home] 1.7 eller nyere.
+- [Java JDK] [java-home] 7 eller nyere.
 - [Maven] [maven-home] må være installert.
 
 ### Advarsel
