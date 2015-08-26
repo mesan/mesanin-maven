@@ -33,7 +33,7 @@ En vellyket kjøring skriver ut `Hello World!`
 
 Kjør kommandoen `mvn help:effective-pom` for å se den fullstendige konfigurasjonen for prosjektet.
 
-Et løsningsforslag finnes i fila losningsforslag-steg-0.md
+Et løsningsforslag finnes her [losningsforslag-steg-0.md] [losningsforslag]
 
 ### [steg-1: Oppdater avhengighet] [step-1]
 Oppdatering av testavhengighet og tilpasning av testkode.
@@ -57,6 +57,8 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [git-home]: http://git-scm.com/
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [maven-home]: http://maven.apache.org/
+
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-0/losningsforslag-steg-0.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
