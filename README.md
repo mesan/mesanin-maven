@@ -29,7 +29,7 @@ Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle tes
 ### steg-4: Filtrering av ressurser
 I dette steget så skal prosjektets versjonsnummer fra pom.xml legges til i JSP-siden. Dette ønsker du ikke gjøre manuelt da det er lett å glemme.
 
-Et løsningsforslag finnes i fila losningsforslag-steg-4.md
+Et løsningsforslag finnes her [losningsforslag-steg-4.md] [losningsforslag]
 
 ### [steg-5: Uber-jar] [step-5]
 Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
@@ -42,6 +42,8 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
+
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-4/losningsforslag-steg-4.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
