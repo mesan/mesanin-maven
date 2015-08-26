@@ -36,7 +36,7 @@ Synes du det virket unødvendig komplisert å måtte bygge opp classpath-en for 
 Det finnes et bedre alternativ. Stikkordet er uber-jar. Lag en uber-jar, en jar som inneholder alle avhengighetene som 
 trengs for å kjøre applikasjonen, og du trenger ikke lenger å bekymre deg for å manuelt måtte bygge opp classpath-en ved kjøring.
 
-Et løsningsforslag finnes i fila losningsforslag-steg-5.md
+Et løsningsforslag finnes her [losningsforslag-steg-5.md] [losningsforslag]
 
 ### [steg-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
@@ -46,6 +46,8 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
+
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-5/losningsforslag-steg-5.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
