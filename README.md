@@ -88,10 +88,10 @@ Legg til en fil med navn log4j2.xml, forutsetter at Log4J 2 brukes, i src/main/r
         </Loggers>
     </Configuration>
 
-Test at applikasjonen i mesanin-maven-cli fortsatt fungerer. Dette kan gjøres på samme måte som i step-0. 
+Test at applikasjonen i mesanin-maven-cli fortsatt fungerer. Dette kan gjøres på samme måte som i [step-0] [step-0]. 
 Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
 
-Et løsningsforslag finnes i fila losningsforslag-steg-2.md
+Et løsningsforslag finnes her [losningsforslag-steg-2.md] [losningsforslag]
 
 ### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
@@ -110,6 +110,8 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [java-home]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
+
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-2/losningsforslag-steg-2.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1

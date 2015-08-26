@@ -43,7 +43,7 @@ package: no.mesan.mesanin.maven
 [INFO] ------------------------------------------------------------------------
 
 
-## Løsningsforslag 2: one liner
+## Løsningsforslag 2: one-liner
 Dette er kommandoen hvis du er liker one-liners.
 
 `mvn archetype:generate -DgroupId=no.mesan.mesanin.maven -DartifactId=mesanin-maven -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false`
