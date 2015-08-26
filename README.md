@@ -24,7 +24,7 @@ Et eksempel på syntaksen finner du på "Getting started "-siden hos [junit.org]
 
 Sjekk at testen fortsatt fungerer ved å kjøre testen på nytt med `mvn clean test`
 
-Et løsningsforslag finnes i fila losningsforslag-steg-1.md
+Et løsningsforslag finnes her [losningsforslag-steg-1.md] [losningsforslag]
 
 ### [steg-2: Multimodulprosjekt] [step-2]
 Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
@@ -47,6 +47,8 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
 [junit-home]: http://junit.org/
+
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-1/losningsforslag-steg-1.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
