@@ -58,7 +58,7 @@ Den opprinnelige koden fra mesanin-maven skal fordeles på barnprosjektene
 
 - Lag en ny felles service, for eksempel GreeterService.java, som  inneholder felleskoden fra App.java.
 - Benytt den nye servicen i main-metoden i App.java og fra index.jsp i mesanin-maven-web.
-For å få resultatet fra GreetingService så kan følgende kodesnutter legges i JSP-fila. Merk fullt klassenavn.
+For å få resultatet fra GreeterService så kan følgende kodesnutter legges i JSP-fila. Merk fullt klassenavn.
 `<% no.mesan.mesanin.maven.service.GreeterService greeterService = new no.mesan.mesanin.maven.service.GreeterService(); %>`
 `<h2>GreeterService.sayHello(): '<%= greeterService.sayHello() %>'</h2>`
 
