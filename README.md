@@ -72,7 +72,8 @@ For å få resultatet fra GreeterService så kan følgende kodesnutter legges i 
 
 For at loggeren skal skrive ut noe på info-nivå så må den konfigureres litt. Standard loggnivå er error.
 
-Legg til en fil med navn log4j2.xml, forutsetter at Log4J 2 brukes, i src/main/resources med følgende innhold:
+I modulen mesanin-maven-cli legg til en fil med navn log4j2.xml, forutsetter at Log4J 2 brukes, i src/main/resources 
+med følgende innhold:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <Configuration status="WARN">
