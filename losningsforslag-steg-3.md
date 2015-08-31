@@ -25,7 +25,8 @@ public class SlowTest {
 
 - Eksludert SlowTest.java fra sandard bygg.
 - Opprettet profilen med 'id' `alletester` og nullstilt ekskluderingen som er gjort i standard.
- - Pattern brukt i excludes-elementet er hentet fra siden til [maven-surefire-plugin] og eksluderer alle indre klasser.
+ - Nullstilling blir gjort ved å benytte pattern `**/*$*` i excludes-elementet. Det er dette som er defaultverdien 
+ dersom ikke noe er oppgitt. Se siden til [maven-surefire-plugin] for mer informasjon.
 
 Under er et utdrag fra pom.xml
 
