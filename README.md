@@ -32,7 +32,7 @@ Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 ### [step-5: Uber-jar] [step-5]
 Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
 
-### steg-6: Sluttresultat
+### step-6: Sluttresultat
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
 
