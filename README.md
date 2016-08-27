@@ -14,6 +14,8 @@ Den er ikke ment for bruk i produksjon.
 </strong>
 </pre>
 
+### step-0: Opprett prosjekt
+Oppretting av prosjekt på kommandolinja.
 ### steg-0: Opprett prosjekt
 Opprett et prosjekt på kommandolinja
 
@@ -35,22 +37,22 @@ Kjør kommandoen `mvn help:effective-pom` for å se den fullstendige konfigurasj
 
 Et løsningsforslag finnes her [losningsforslag-steg-0.md] [losningsforslag]
 
-### [steg-1: Oppdater avhengighet] [step-1]
+### [step-1: Oppdater avhengighet] [step-1]
 Oppdatering av testavhengighet og tilpasning av testkode.
 
-### [steg-2: Multimodulprosjekt] [step-2]
+### [step-2: Multimodulprosjekt] [step-2]
 Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 
-### [steg-3: Ekskludering av tester og byggprofiler] [step-3]
+### [step-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
-### [steg-4: Filtrering av ressurser] [step-4]
+### [step-4: Filtrering av ressurser] [step-4]
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 
-### [steg-5: Uber-jar] [step-5]
+### [step-5: Uber-jar] [step-5]
 Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
 
-### [steg-6: Sluttresultat] [step-6]
+### [step-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
 
