@@ -34,8 +34,8 @@ Vi får da ett morprosjekt med flere barnprosjekter
 Hint:
 
 - Det har betydning for i hvilken katalog du står i når du kjører kommandoene for opprettelse av barnprosjektene.
-- Prosjektene mesanin-maven-common og mesanin-maven-cli kan opprettes med malen `maven-archetype-quickstart`.
-- mesanin-maven-web kan opprettes med malen `maven-archetype-webapp`.
+- Prosjektene `mesanin-maven-common` og `mesanin-maven-cli` kan opprettes med malen `maven-archetype-quickstart`.
+- `mesanin-maven-web` kan opprettes med malen `maven-archetype-webapp`.
 - Benytt samme groupId for alle prosjektene som ble benyttet under opprettelsen av første prosjekt, `no.mesan.mesanin.maven`.
 - Et barnprosjekt kan ha en avhengighet til et annet barnprosjekt.
 
@@ -54,7 +54,7 @@ Den overordnede prosjektstrukturen er tenkt å bli som vist under:
 +--pom.xml  
 </pre>
 
-Den opprinnelige koden fra mesanin-maven skal fordeles på barnprosjektene
+Den opprinnelige koden fra `mesanin-maven` skal fordeles på barnprosjektene
 
 - Lag en ny felles service, for eksempel GreeterService.java, som  inneholder felleskoden fra App.java.
 - Benytt den nye servicen i main-metoden i App.java og fra index.jsp i mesanin-maven-web.
@@ -62,13 +62,25 @@ For å få resultatet fra GreeterService så kan følgende kodesnutter legges i 
 `<% no.mesan.mesanin.maven.service.GreeterService greeterService = new no.mesan.mesanin.maven.service.GreeterService(); %>`
 `<h2>GreeterService.sayHello(): '<%= greeterService.sayHello() %>'</h2>`
 
-- Det kan være en idé å legge til en plugin som gjør at du slipper å tenkte på å deploye mesanin-maven-web til en Servlet-container for å gjøre utvikling enklere. 
+- Det kan være en idé å legge til en plugin som gjør at du slipper å tenkte på å deploye `mesanin-maven-web` til en Servlet-container for å gjøre utvikling enklere. 
   - Dette løser Maven ved at du kan kunne legge til en plugin.
   - Legg til enten `tomcat7-maven-plugin` eller `jetty-maven-plugin` som **plugin** i mesanin-maven-web.
 - Endre slik at avhengigheter som skal brukes i flere barnprosjekter konfigureres i morpom-en, `dependencyManagement`.
 - Legg til et loggrammeverk
-  - Endre App.java i mesanin-maven-cli til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
-  - Legg til en logger i mesanin-maven-common slik at GreeterService kan benytte den for å logge at servicen blir kalt.
+  - Endre App.java i `mesanin-maven-cli` til å bruke en logger i stedet for System.out.println() for å skrive ut resultatet fra GreeterService.
+  - Legg til en logger i `mesanin-maven-common` slik at GreeterService kan benytte den for å logge at servicen blir kalt.
+  
+Under er et eksempel for hvordan du definerer en logger fra loggrammeverket Apache Log4j 2. Utsnittet er hentet fra fila App.java 
+fra modulen `mesanin-maven-cli` hentet fra løsningsforslaget i [step-3].
+<pre>
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+...
+private static final Logger logger = LogManager.getLogger(App.class.getName());
+...
+</pre>
+  
+Så da er det bare å bruke loggeren.
 
 For at loggeren skal skrive ut noe på info-nivå så må den konfigureres litt. Standard loggnivå er error.
 
@@ -89,7 +101,7 @@ med følgende innhold:
         </Loggers>
     </Configuration>
 
-Test at applikasjonen i mesanin-maven-cli fortsatt fungerer. Dette kan gjøres på samme måte som i [step-0] [step-0]. 
+Test at applikasjonen i `mesanin-maven-cli` fortsatt fungerer. Dette kan gjøres på samme måte som i [step-0]. 
 Husk å legge til GreeterService og eventuelt andre avhengigheter på classpath.
 
 Et løsningsforslag finnes her [losningsforslag-step-2.md] [losningsforslag]
