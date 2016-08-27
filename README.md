@@ -17,14 +17,14 @@ Den er ikke ment for bruk i produksjon.
 ### [step-0: Opprett prosjekt] [step-0]
 Oppretting av prosjekt på kommandolinja.
 
-### steg-1: Oppdater avhengighet
+### step-1: Oppdater avhengighet
 - Oppdater testavhengigheten (JUnit) til siste versjon. Søk kan gjøres i [The Central Repository] [maven-search-repo]
 - Oppdater syntaks for testen til å bruke JUnit 4.x syntaks. Det blir da mindre boilerplatekode i testen.
 Et eksempel på syntaksen finner du på "Getting started "-siden hos [junit.org] [junit-home]
 
 Sjekk at testen fortsatt fungerer ved å kjøre testen på nytt med `mvn clean test`
 
-Et løsningsforslag finnes her [losningsforslag-steg-1.md] [losningsforslag]
+Et løsningsforslag finnes her [losningsforslag-step-1.md] [losningsforslag]
 
 ### [step-2: Multimodulprosjekt] [step-2]
 Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
