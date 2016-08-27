@@ -14,16 +14,16 @@ Den er ikke ment for bruk i produksjon.
 </strong>
 </pre>
 
-### [steg-0: Opprett prosjekt] [step-0]
+### [step-0: Opprett prosjekt] [step-0]
 Oppretting av prosjekt på kommandolinja.
 
-### [steg-1: Oppdater avhengighet] [step-1]
+### [step-1: Oppdater avhengighet] [step-1]
 Oppdatering av testavhengighet og tilpasning av testkode.
 
-### [steg-2: Multimodulprosjekt] [step-2]
+### [step-2: Multimodulprosjekt] [step-2]
 Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 
-### steg-3: Ekskludering av tester og byggprofiler
+### step-3: Ekskludering av tester og byggprofiler
 Etter en stund så har applikasjonen vokst og mengden tester er blitt mange og det å kjøre testene
 går stadig tregere. Dette har gjort at det å kjøre enhetstestene tar uforholdsmessig lang tid og utgjør
 et irritasjonsmoment i det daglige. Men det er kun noen av testene som tar lang tid.
@@ -60,13 +60,13 @@ public class SlowTest {
 
 Et løsningsforslag finnes her [losningsforslag-steg-3.md] [losningsforslag]
 
-### [steg-4: Filtrering av ressurser] [step-4]
+### [step-4: Filtrering av ressurser] [step-4]
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 
-### [steg-5: Uber-jar] [step-5]
+### [step-5: Uber-jar] [step-5]
 Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
 
-### [steg-6: Sluttresultat] [step-6]
+### [step-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 
 
