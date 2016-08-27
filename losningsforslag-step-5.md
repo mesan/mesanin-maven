@@ -1,4 +1,4 @@
-# Løsningsforslag steg-5
+# Løsningsforslag step-5
 
 ###### Lagt til konfigurasjon i pom.xml for mesanin-maven-cli
 

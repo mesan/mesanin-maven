@@ -1,4 +1,4 @@
-# Løsningsforslag steg-2
+# Løsningsforslag step-2
 
 ###### Endret packaging fra jar til pom i pom.xml til
 Dette er for at det skal være mulig å lage et multimodulprosjekt.

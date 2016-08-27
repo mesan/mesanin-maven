@@ -1,4 +1,4 @@
-# Løsningsforslag steg-4
+# Løsningsforslag step-4
 
 ###### Lagt til en div i index.jsp som refererer til prosjektversjon
     ...

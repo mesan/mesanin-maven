@@ -1,4 +1,4 @@
-# Løsningsforslag steg-1
+# Løsningsforslag step-1
 
 ######Endret testavhengighet i pom.xml til
 
