@@ -15,8 +15,6 @@ Den er ikke ment for bruk i produksjon.
 </pre>
 
 ### step-0: Opprett prosjekt
-Oppretting av prosjekt på kommandolinja.
-### steg-0: Opprett prosjekt
 Opprett et prosjekt på kommandolinja
 
 - Hint: Maven Archetype Plugin, mal `maven-archetype-quickstart`  
