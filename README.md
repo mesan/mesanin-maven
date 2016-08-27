@@ -71,7 +71,7 @@ For å få resultatet fra GreeterService så kan følgende kodesnutter legges i 
   - Legg til en logger i `mesanin-maven-common` slik at GreeterService kan benytte den for å logge at servicen blir kalt.
   
 Under er et eksempel for hvordan du definerer en logger fra loggrammeverket Apache Log4j 2. Utsnittet er hentet fra fila App.java 
-fra modulen `mesanin-maven-cli` hentet fra løsningsforslaget i [step-3].
+fra modulen `mesanin-maven-cli` hentet fra implementering av løsningsforslaget som kan ses i [step-3].
 <pre>
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
