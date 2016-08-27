@@ -26,10 +26,10 @@ Endre prosjektet til et multimodulprosjekt for gjenbruk av kode.
 ### [step-3: Ekskludering av tester og byggprofiler] [step-3]
 Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle testene kjøres på byggserver ved hjelp av en byggprofil.
 
-### steg-4: Filtrering av ressurser
+### step-4: Filtrering av ressurser
 I dette steget så skal prosjektets versjonsnummer fra pom.xml legges til i JSP-siden. Dette ønsker du ikke gjøre manuelt da det er lett å glemme.
 
-Et løsningsforslag finnes her [losningsforslag-steg-4.md] [losningsforslag]
+Et løsningsforslag finnes her [losningsforslag-step-4.md] [losningsforslag]
 
 ### [step-5: Uber-jar] [step-5]
 Lag en uber-jar som kan kjøres uten å måtte manuelt bygge opp classpath-en ved kjøring.
@@ -43,7 +43,7 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
 
-[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-4/losningsforslag-steg-4.md
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-4/losningsforslag-step-4.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
