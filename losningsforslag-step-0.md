@@ -1,4 +1,4 @@
-# Løsningsforslag steg-0
+# Løsningsforslag step-0
 
 ## Løsningsforslag 1 - interaktivt modus
 Trykket [ENTER] der det allerede er fylt ut en verdi.
