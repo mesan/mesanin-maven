@@ -58,7 +58,7 @@ public class SlowTest {
 
 </pre>
 
-Et løsningsforslag finnes her [losningsforslag-steg-3.md] [losningsforslag]
+Et løsningsforslag finnes her [losningsforslag-step-3.md] [losningsforslag]
 
 ### [step-4: Filtrering av ressurser] [step-4]
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
@@ -75,7 +75,7 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
 
-[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-3/losningsforslag-steg-3.md
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-3/losningsforslag-step-3.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1

@@ -1,4 +1,4 @@
-# Løsningsforslag steg-3
+# Løsningsforslag step-3
 
 ###### Lagt til SlowTest.java som skal eksluderes fra standard bygg
 <pre>
