@@ -29,14 +29,14 @@ Ekskludering av trege tester fra standard bygg, og tilrettelegge for at alle tes
 ### [step-4: Filtrering av ressurser] [step-4] 
 Legge til versjonsnummer i JSP-siden ved hjelp av filtrering av ressurser.
 
-### steg-5: Uber-jar
+### step-5: Uber-jar
 Synes du det virket unødvendig komplisert å måtte bygge opp classpath-en for hånd for å kjøre applikasjonen i 
-`mesanin-maven-cli` i [steg-2] [step-2]?
+`mesanin-maven-cli` i [step-2] [step-2]?
 
 Det finnes et bedre alternativ. Stikkordet er uber-jar. Lag en uber-jar, en jar som inneholder alle avhengighetene som 
 trengs for å kjøre applikasjonen, og du trenger ikke lenger å bekymre deg for å manuelt måtte bygge opp classpath-en ved kjøring.
 
-Et løsningsforslag finnes her [losningsforslag-steg-5.md] [losningsforslag]
+Et løsningsforslag finnes her [losningsforslag-step-5.md] [losningsforslag]
 
 ### [step-6: Sluttresultat] [step-6]
 Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
@@ -47,7 +47,7 @@ Dette steget inneholder sluttresultatet etter å ha vært gjennom tutorialen.
 [maven-home]: http://maven.apache.org/
 [maven-search-repo]: http://search.maven.org/
 
-[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-5/losningsforslag-steg-5.md
+[losningsforslag]: https://github.com/mesan/mesanin-maven/blob/step-5/losningsforslag-step-5.md
 
 [step-0]: https://github.com/mesan/mesanin-maven/tree/step-0
 [step-1]: https://github.com/mesan/mesanin-maven/tree/step-1
